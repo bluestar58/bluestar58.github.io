@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include head.html %}
+    {% include header.html %}
     <body>
         <div class="wrapper">
             
-            <!-- <div class="navbar container">
+            <div class="navbar container">
                 <a id="author-name" class="alignable"  href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
                 <ul id="navlist" class="alignable navbar-ul">
                     {% for x in site.nav %}
                     <li class="alignable nav-list"><a href="{{ x.link }}">{{ x.name }}</a></li>
                     {% endfor %}
                 </ul>
-            </div> -->
-
-            <div class="navbar container">
-                <div class="header-left">
-                    <a id="author-name" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
-                </div>
-                <div class="header-right">
-                    <ul id="navlist" class="navbar-ul">
-                        {% for x in site.nav %}
-                        <li class="nav-list"><a href="{{ x.link }}">{{ x.name }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
             </div>
-            
             
             <div style="clear:both"></div>
             <hr>
