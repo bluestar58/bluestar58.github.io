@@ -1,15 +1,37 @@
-<footer>
-	<div id="footer-left">
-		<a href="mailto:shiza@bu.edu"><i class="fa-lg fa fa-envelope footer-icon" aria-hidden="true"></i></a>
-		<a href="http://www.twitter.com/theshizaali"><i class="fa-lg fa fa-twitter footer-icon" aria-hidden="true"></i></a>
-		<a href="https://github.com/theshizaali"><i class="fa-lg fa fa-github footer-icon" aria-hidden="true"></i></a>
-		<a href="http://www.linkedin.com/in/theshizaali/"><i class="fa-lg fa fa-linkedin footer-icon" aria-hidden="true"></i></a>
-		<a href="https://scholar.google.com/citations?user=wVYZPn4AAAAJ&hl=en"><i class="fa-lg fa fa-graduation-cap footer-icon" aria-hidden="true"></i></a>
-		<br>
-		<br>
-		&copy; <time dcatetime="{{ site.time | date: "%B %-d, %Y" }}">{{ site.time | date: '%Y' }}</time> XYZ
-	</div>
-	<div id="footer-right">
-		XYZ
-	</div>
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+            <svg class="svg-icon orange">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      {%- if site.author %}
+        <ul class="contact-list">
+          {% if site.author.name -%}
+            <li class="p-name">{{ site.author.name | escape }}</li>
+          {% endif -%}
+          {% if site.author.email -%}
+            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          {%- endif %}
+        </ul>
+      {%- endif %}
+      </div>
+      <div class="footer-col">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
 </footer>
