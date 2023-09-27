@@ -1,0 +1,23 @@
+title:  Shiza Ali
+tagline: Boston University
+url: http://shizaali.com
+baseurl: ""
+
+markdown: kramdown
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+github:
+  repo: https://bluestar58/bluestar58.github.io
+  
+nav:
+ - name: "about"
+   link: "/"
+ - name: "blog"
+   link: "/blog"
+ - name: "cv"
+   link: "/assets/cv.pdf"
+ - name: "google scholar"
+   link: "https://scholar.google.com/citations?user=wVYZPn4AAAAJ&hl=en"
