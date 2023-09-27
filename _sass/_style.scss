@@ -42,7 +42,7 @@ hr {
 }
 
 .navbar {
-    text-align: center;
+    // text-align: center;
     padding: 2em 0 2em 0;
 }
 
@@ -239,20 +239,9 @@ pre {
 }
 
 /*extra*/
-:root {
-    --font-family: 'IBM Plex Sans';
-    --font-family-mono: 'Inconsolata';
-    --accent: #485fc7;
-}
 
 * {
     font-family: var(--font-family);
-}
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 }
 
 .avatar img {
