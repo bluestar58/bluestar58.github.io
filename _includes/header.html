@@ -6,13 +6,14 @@
                     <span class="has-text-weight-light">Shiza</span> <span class="has-text-weight-semibold">Ali</span>
                 </a>
             </h1>
-                <div class="navbar container">
-                    <ul id="navlist" class="alignable navbar-ul">
-                        {% for x in site.nav %}
-                        <li class="alignable nav-list"><a href="{{ x.link }}">{{ x.name }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
+
+            <div id="navbar-menu" class="is-size-6 is-flex navbar-menu1">
+                <ul id="navlist" class="alignable navbar-ul">
+                    {% for x in site.nav %}
+                    <li class="alignable nav-list"><a href="{{ x.link }}">{{ x.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
         
     </div>
