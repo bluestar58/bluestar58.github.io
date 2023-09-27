@@ -36,7 +36,7 @@ hr {
 #author-name {
     font-size: 3em;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     display: block;
     color: #272727;
 }
@@ -44,6 +44,9 @@ hr {
 .navbar {
     // text-align: center;
     padding: 2em 0 2em 0;
+    display: flex;
+    justify-content: space-between; /* Push elements to the left and right */
+    align-items: center; /* Vertically center content */
 }
 
 .navbar-ul {
