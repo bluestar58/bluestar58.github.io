@@ -27,8 +27,6 @@ XYZ
 
 > April 2023: xyz <a href="https://xyz.com/">xyz</a> xyz  <br>
 
-> December 2022: My paper on collaborative tools for online presence was accepted to #CHI2023! 
-
 ---
 
 # Research Projects
