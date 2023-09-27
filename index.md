@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-# About Me
+# Hi! My name is Shiza and I'm still working on my webite.
 
 <div class="about-me-grid" >
     <img class="profile-picture" src="/images/shiza.png" alt="Profile Picture">
